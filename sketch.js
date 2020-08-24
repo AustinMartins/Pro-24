@@ -24,7 +24,7 @@ function setup() {
 	
 	ground1 = new ground(400,690,800,10);
 
-	paper1 = new Paper(100,600,5);
+	paper1 = new Paper(100,670,10);
 
 	side1 = new dustbin(680,670,200,20);
 	side2 = new dustbin(570,630,20,100);
@@ -56,6 +56,6 @@ function draw() {
 
 function keypressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(paper1.body,paper1.position,{x:85,y:-85})
+		Matter.Body.applyForce(paper1.body,paper1.body.position,{x:0.5,y:-0.5})
 	}
 }

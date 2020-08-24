@@ -21,7 +21,7 @@ class Paper {
       rectMode(CENTER);
       strokeWeight(5);
       stroke("red");
-      fill("blue");
+      fill("green");
       ellipse(0, 0, this.width, this.height);
       pop();
     }
